@@ -1,0 +1,91 @@
+$black: #272E35;
+$white: #ffffff;
+$gray: #6E757C;
+$gray-dark: #6A7986;
+$gray-light: #BAC3CA;
+$orange: #FAA87A;
+$asphalt: #969DB1;
+$light: #EEEFF2;
+$primary: #FF6E30;
+$secondary: #748FB5;
+$dark: #1E252B;
+$dark-bg: #2C353D;
+$dark-light: #74777E;
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilos generales */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: $light;
+}
+
+.app {
+    margin: 10vw;
+}
+
+.primary {
+    background-color: $primary;
+    color: $white;
+}
+
+
+
+
+/* Fin generales */
+
+.main {
+    height: 100vh;
+    align-items: flex-start;
+}
+.hero {
+    width: 49vw;
+    &__title {
+        font-size: 72px;
+    }
+    &__text {
+        font-size: 20px;
+    }
+}
+
+.main__form {
+    width: 31vw;
+    display: flex;
+    flex-direction: column;
+    background-color: $dark-bg;
+    padding: 3rem;
+    border-radius: 2rem;
+    color: $white;
+    h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 0;
+    }
+}
+
+.form-control {
+    flex-grow: 1;
+    padding: .375rem .75rem;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
