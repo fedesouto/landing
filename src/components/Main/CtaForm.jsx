@@ -10,7 +10,7 @@ const CtaForm = () => {
         <form className="main__form">
             <h2>Lorem ipsum dolor sit amet.</h2>
             {fields.map((field, index) => <input key={index} type="text" name={field.name} placeholder={field.label} className="form-control"/>)}
-            <button className="btn primary">¡Solicitá tu presupuesto!</button>
+            <button className="btn primary">¡Solicitá tu presupuesto ahora!</button>
         </form>
     )
 }
