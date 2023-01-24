@@ -64,11 +64,12 @@ body {
 
 /* Header y Navbar */
 header {
-  padding: 0 10svw;
+  padding: 0 10vw;
   background-color: $dark;
   color: $light;
   position: sticky;
   top: 0;
+  box-shadow: 0 0 5px $asphalt;
 }
 .menu {
   list-style-type: none;
@@ -80,6 +81,17 @@ header {
     font-weight: 600;
     color: $light;
     font-family: "Poppins", sans-serif;
+    cursor: pointer;
+  }
+  li:after {
+    display: block;
+    content: ' ';
+    border-bottom: solid 2px $light;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+  li:hover:after {
+    transform: scaleX(1);
   }
   @media screen and (max-width: 768px) {
     left: -2000px;
@@ -115,10 +127,13 @@ header {
 /* End Header y Navbar */
 
 .main {
-  height: 60vh;
-  margin: 5vh 10vw;
+  min-height: 60vh;
+  padding: 5vh 10vw;
   align-items: flex-start;
-  
+  background-repeat: no-repeat;
+  background-position-x: 45vw;
+  background-position-y: top;
+  background-size: 50%;
 }
 .hero {
   width: 49vw;
