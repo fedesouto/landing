@@ -12,7 +12,7 @@ const Clients = () => {
         <div className="clients__container">
             <h3 className="clients__title">Algunos de nuestros clientes</h3>
             <div className="container" style={{justifyContent: 'space-between'}}>
-            {clientes.map(cliente => <div className="client">{cliente.nombre}</div>)}
+            {clientes.map((cliente, index) => <div className="client" key={index}>{cliente.nombre}</div>)}
             </div>
         </div>
     )

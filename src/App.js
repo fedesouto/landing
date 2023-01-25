@@ -1,13 +1,18 @@
-import Main from './components/Main/Main';
+import Main from './components/Main/index';
 import Navbar from './components/Navbar/Navbar';
 import './styles.scss'
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import ContactForm from './components/Contact/Contact';
 
 function App() {
   return (
-    <div className='app'>
+    <BrowserRouter>
       <Navbar />
-      <Main />
-    </div>
+      <Routes>
+        <Route index element={<Main />} />
+        <Route path='/contact' element={<ContactForm />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

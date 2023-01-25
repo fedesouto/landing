@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Burger from "./Burger";
 
 const Navbar = () => {
@@ -10,10 +11,10 @@ const Navbar = () => {
       <nav>
           <Burger isActive={isActive} setIsActive={setIsActive} />
         <ul className={`menu container ${isActive?'active':''}`}>
-          <li>Home</li>
-          <li>Servicios</li>
-          <li>Nosotros</li>
-          <li>Contactanos</li>
+          <li><Link to='/' onClick={()=>setIsActive(false)}>Home</Link></li>
+          <li><Link onClick={()=>setIsActive(false)}>Servicios</Link></li>
+          <li><Link onClick={()=>setIsActive(false)}>Nosotros</Link></li>
+          <li><Link to='/contact' onClick={()=>setIsActive(false)}>Contactanos</Link></li>
         </ul>
       </nav>
     </header>
