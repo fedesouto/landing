@@ -3,9 +3,9 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="hero">
-      <h1 className="hero__title">Lorem ipsum <br />dolor sit, amet consectetur.</h1>
+      <h1 className="hero__title" >Elevá tu marca <br/> con un sitio web a medida.</h1>
       <p className="hero__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ex.
+      Transformá tu presencia en línea con nuestros servicios expertos en desarrollo web.
       </p>
       <div>
         <button className="btn primary">Conocé nuestros servicios</button>

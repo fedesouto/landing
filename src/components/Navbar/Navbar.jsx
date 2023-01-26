@@ -12,7 +12,7 @@ const Navbar = () => {
           <Burger isActive={isActive} setIsActive={setIsActive} />
         <ul className={`menu container ${isActive?'active':''}`}>
           <li><Link to='/' onClick={()=>setIsActive(false)}>Home</Link></li>
-          <li><Link onClick={()=>setIsActive(false)}>Servicios</Link></li>
+          <li><Link to='/services' onClick={()=>setIsActive(false)}>Servicios</Link></li>
           <li><Link onClick={()=>setIsActive(false)}>Nosotros</Link></li>
           <li><Link to='/contact' onClick={()=>setIsActive(false)}>Contactanos</Link></li>
         </ul>
