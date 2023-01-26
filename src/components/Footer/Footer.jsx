@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return(
@@ -11,11 +12,11 @@ const Footer = () => {
                 </div>
                 <div className="social_media">
                     <h2>Seguinos en nuestras redes.</h2>
-                    <div>
-                    <Link>Logo Instagram</Link>
-                    <Link>Logo Facebook</Link>
-                    <Link>Logo Twitter</Link>
-                    <Link>Logo Linkedin</Link>
+                    <div className="icons">
+                    <Link><FaInstagram /></Link>
+                    <Link><FaFacebook /></Link>
+                    <Link><FaTwitter /></Link>
+                    <Link><FaLinkedin /></Link>
                     </div>
                 </div>
             </div>
