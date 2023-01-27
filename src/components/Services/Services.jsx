@@ -7,7 +7,7 @@ const Services = () => {
       image: "assets/web-development.svg",
       title: "Diseño y Desarrollo Web",
       description:
-        "Ya sea que necesite un sencillo sitio web de folleto o una plataforma de comercio electrónico compleja, tenemos las habilidades y la experiencia para ofrecer la solución perfecta.",
+        "Ya sea que necesite un sencillo sitio web o una plataforma de comercio electrónico compleja, tenemos las habilidades y la experiencia para ofrecer la solución perfecta.",
     },
     {
       image: "assets/seo-svgrepo-com.svg",
