@@ -10,7 +10,8 @@ const Features = () => {
     ]
     return (
         <div id="features">
-            <h2 className="features__title">¿Qué nos diferencia?</h2>
+            <h2 className="features__title">Construimos sitios web que impulsan resultados.</h2>
+            <p className="features__copy">Utilizamos herramientas y tecnologías de vanguardia para crear sitios web seguros, escalables y de gran rendimiento. <br />Nos enfocamos en desarrollar sitios web que atraigan y conviertan a los clientes, a la vez que mejoran la usabilidad y la experiencia del usuario.</p>
             <div className="features__wrapper container">
             {elements.map(({icon, title, description}, index) => {
                 return(

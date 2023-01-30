@@ -18,8 +18,8 @@ const Main = () => {
             <img src="https://cdni.iconscout.com/illustration/premium/thumb/web-development-3727526-3135828.png" alt="" style={{maxWidth: '100vw', height: 'auto'}}/>
         </div>
       </div>
-      <Clients />
       <Features />
+      <Clients />
     </div>
   );
 };

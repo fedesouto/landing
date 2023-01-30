@@ -65,6 +65,10 @@ body {
   box-shadow: 0 0 5px $secondary;
 }
 
+
+p {
+  line-height: 1.6;
+}
 /* Fin generales */
 
 /* Header y Navbar */
@@ -73,9 +77,10 @@ header {
   color: $light;
   position: sticky;
   top: 0;
-  box-shadow: 0 0 5px $asphalt;
+  box-shadow: 0 0 5px $dark;
   background-color: $dark;
   height: 10vh;
+  z-index: 3;
 }
 .menu {
   list-style-type: none;
@@ -140,7 +145,7 @@ header {
 /* End Header y Navbar */
 
 .main {
-  padding: 5vh 10vw;
+  padding: 10vh 10vw;
   align-items: flex-start;
   background-repeat: no-repeat;
   background-position-x: 45vw;
@@ -185,8 +190,8 @@ header {
 }
 
 .clients__container {
-  padding: 6rem 10vw;
-  background: $secondary;
+  padding: 10rem 10vw;
+
 }
 
 .clients__title {
@@ -203,16 +208,61 @@ header {
 }
 
 #features {
-  margin-top: 2rem;
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: $dark;
+  min-height: 90vh; 
+  position: relative;
+  overflow: hidden;
+}
+
+#features::after {
+  background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  content: " ";
+  border-radius: 50%;
+  filter: blur(200px);
+  opacity: .6;
+}
+#features::before {
+  background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  content: " ";
+  border-radius: 50%;
+  filter: blur(200px);
+  opacity: .6;
 }
 
 .features__title {
+  z-index: 2;
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
+  max-width: 960px;
+
+}
+.features__copy {
+  z-index: 2;
+  text-align: center;
+  max-width: 960px;
 }
 .features__wrapper {
+  z-index: 2;
   padding-top: 2rem;
+  max-width: 960px;
   flex-wrap: wrap;
   .feature {
     margin-bottom: 2rem;
