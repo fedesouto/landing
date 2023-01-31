@@ -65,7 +65,6 @@ body {
   box-shadow: 0 0 5px $secondary;
 }
 
-
 p {
   line-height: 1.6;
 }
@@ -191,8 +190,7 @@ header {
 
 .clients__container {
   padding: 10rem 10vw;
-
-}
+  
 
 .clients__title {
   text-align: center;
@@ -206,6 +204,7 @@ header {
   font-weight: 600;
   color: $gray-dark;
 }
+}
 
 #features {
   display: flex;
@@ -216,13 +215,18 @@ header {
   justify-content: center;
   color: white;
   background: $dark;
-  min-height: 90vh; 
+  min-height: 90vh;
   position: relative;
   overflow: hidden;
 }
 
 #features::after {
-  background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+  background: linear-gradient(
+    135.15deg,
+    #ae80dc 1.17%,
+    #dc83c3 31.88%,
+    #8084dc 65.46%
+  );
   width: 300px;
   height: 300px;
   position: absolute;
@@ -230,11 +234,17 @@ header {
   right: -10%;
   content: " ";
   border-radius: 50%;
+  -webkit-filter: blur(200px);
   filter: blur(200px);
-  opacity: .6;
+  opacity: 0.6;
 }
 #features::before {
-  background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+  background: linear-gradient(
+    135.15deg,
+    #ae80dc 1.17%,
+    #dc83c3 31.88%,
+    #8084dc 65.46%
+  );
   width: 300px;
   height: 300px;
   position: absolute;
@@ -242,9 +252,11 @@ header {
   left: -10%;
   content: " ";
   border-radius: 50%;
+  -webkit-filter: blur(200px);
   filter: blur(200px);
-  opacity: .6;
+  opacity: 0.6;
 }
+
 
 .features__title {
   z-index: 2;
@@ -252,12 +264,13 @@ header {
   font-size: 2rem;
   font-weight: 600;
   max-width: 960px;
-
+  text-shadow: 1px 1px 5px $dark;
 }
 .features__copy {
   z-index: 2;
   text-align: center;
   max-width: 960px;
+
 }
 .features__wrapper {
   z-index: 2;
@@ -273,6 +286,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     text-align: center;
+  text-shadow: 1px 1px 5px $dark;
     svg {
       font-size: 4rem;
     }
@@ -328,14 +342,13 @@ footer {
     h2 {
       border-bottom: $primary solid 2px;
       text-align: justify;
-
     }
   }
   .about {
     max-width: 35vw;
     text-align: justify;
   }
-  
+
   .footer_contact_data {
     font-size: 1rem;
     div {
@@ -413,11 +426,15 @@ footer {
     margin-left: 0;
     margin-right: 0;
   }
+  .features__title, .features__copy {
+    max-width: 350px;
+  }
   footer {
     .main_footer {
       align-items: center;
       text-align: center;
-      .about, .footer_contact {
+      .about,
+      .footer_contact {
         width: 100%;
         max-width: 100%;
       }
