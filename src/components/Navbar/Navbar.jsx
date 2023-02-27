@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Burger from "./Burger";
+import Logo from "../Logo/Logo";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
     <header className="container" style={{ justifyContent: "space-between"}}>
-      <h1>Logo</h1>
+      <Logo/>
       <nav>
           <Burger isActive={isActive} setIsActive={setIsActive} />
         <ul className={`menu container ${isActive?'active':''}`}>

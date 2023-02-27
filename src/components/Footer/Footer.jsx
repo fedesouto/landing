@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         
       </div>
-      <div className="copyright">Copyright © {new Date().getFullYear()}, Nombre Empresa.</div>
+      <div className="copyright">Copyright © {new Date().getFullYear()}, Argytec.</div>
     </footer>
   );
 };
