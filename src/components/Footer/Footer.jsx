@@ -16,7 +16,7 @@ const Footer = () => {
             de trabajo duradera con nuestros clientes, basada en la confianza y
             el apoyo mutuo.{" "}
           </p>
-          <button className="btn primary">¡Trabajemos juntos!</button>
+          <button className="btn primary"><Link to='/contact'>¡Trabajemos juntos!</Link></button>
         </div>
         <div className="footer_contact">
           <h2>Contactanos.</h2>

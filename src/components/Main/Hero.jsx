@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
       Transformá tu presencia en línea con nuestros servicios expertos en desarrollo web.
       </p>
       <div>
-        <button className="btn primary">Conocé nuestros servicios</button>
+        <button className="btn primary"><Link to='/services'>Conocé nuestros servicios</Link></button>
       </div>
       <div>
         <button className="btn outlined">Quiero mi web</button>

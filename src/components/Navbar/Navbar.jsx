@@ -8,13 +8,13 @@ const Navbar = () => {
 
   return (
     <header className="container" style={{ justifyContent: "space-between"}}>
-      <Logo/>
+      <Link to='/'><Logo/></Link>
       <nav>
           <Burger isActive={isActive} setIsActive={setIsActive} />
         <ul className={`menu container ${isActive?'active':''}`}>
           <li><Link to='/' onClick={()=>setIsActive(false)}>Home</Link></li>
           <li><Link to='/services' onClick={()=>setIsActive(false)}>Servicios</Link></li>
-          <li><Link onClick={()=>setIsActive(false)}>Nosotros</Link></li>
+          <li><Link to='/faq' onClick={()=>setIsActive(false)}>Preguntas Frecuentes</Link></li>
           <li><Link to='/contact' onClick={()=>setIsActive(false)}>Contactanos</Link></li>
         </ul>
       </nav>

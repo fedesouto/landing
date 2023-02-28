@@ -1,18 +1,19 @@
 import React from "react";
+import { IoLogoReact, IoLogoNodejs, IoLogoPython, IoLogoGithub, IoLogoFigma, IoLogoWordpress } from "react-icons/io5";
 
 const Clients = () => {
     const clientes = [
-        {nombre: "Cliente1", logo:""},
-        {nombre: "Cliente2", logo:""},
-        {nombre: "Cliente3", logo:""},
-        {nombre: "Cliente4", logo:""},
-        {nombre: "Cliente5", logo:""},
+        {nombre: "React", logo:<IoLogoReact/>},
+        {nombre: "NodeJS", logo:<IoLogoNodejs/>},
+        {nombre: "Python", logo:<IoLogoPython/>},
+        {nombre: "Github", logo:<IoLogoGithub/>},
+        {nombre: "Figma", logo:<IoLogoFigma/>},
+        {nombre: "Wordpress", logo:<IoLogoWordpress/>},
 ]
     return(
         <div className="clients__container">
-            <h3 className="clients__title">Algunos de nuestros clientes</h3>
             <div className="container" style={{justifyContent: 'space-between'}}>
-            {clientes.map((cliente, index) => <div className="client" key={index}>{cliente.nombre}</div>)}
+            {clientes.map((cliente, index) => <div className="client" key={index}>{cliente.logo}</div>)}
             </div>
         </div>
     )

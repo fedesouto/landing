@@ -11,7 +11,7 @@ const Services = () => {
     },
     {
       image: "assets/seo-svgrepo-com.svg",
-      title: "Optimización de Motores de Búsqueda",
+      title: "Optimización de SEO",
       description:
         "Analizaremos su sitio web y haremos recomendaciones para optimizaciones que le ayudarán a lograr una mayor visibilidad y más tráfico orgánico.",
     },
@@ -30,11 +30,7 @@ const Services = () => {
       title: "Modificación de Sitios Existentes",
       description: "Hacemos que tu web sea fácil de usar, atractivo y que cumpla con los estándares modernos de diseño web."
     },
-    {
-      image: "assets/edit-svgrepo-com.svg",
-      title: "Algun otro servicio",
-      description: "Hacemos que tu web sea fácil de usar, atractivo y que cumpla con los estándares modernos de diseño web."
-    },
+    
   ];
   return (
     <section id="services">

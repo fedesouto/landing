@@ -6,7 +6,7 @@ const ServiceCard = ({service: {image, title, description}}) => {
             <img src={image} alt={title} />
             <h3>{title}</h3>
             <p>{description}</p>
-            <button className="btn primary">Solicitar presupuesto!</button>
+            <button className="btn primary">Conocé más</button>
         </article>
     )
 }

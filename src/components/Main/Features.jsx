@@ -10,27 +10,27 @@ const Features = () => {
   const elements = [
     {
       icon: <FcMultipleDevices />,
-      title: "Lorem, ipsum dolor.",
+      title: "100% Responsive.",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur voluptatem quaerat iste cupiditate in.",
+        "Trabajamos para que tu sitio se vea bien en monitores, tablets y celulares.",
     },
     {
       icon: <FcRating />,
-      title: "Lorem, ipsum dolor.",
+      title: "Imagen Profesional.",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur voluptatem quaerat iste cupiditate in.",
+        "Realizamos sitios que te permitirán destacarte de tu competencia.",
     },
     {
       icon: <FcStatistics />,
-      title: "Lorem, ipsum dolor.",
+      title: "Crecimiento.",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur voluptatem quaerat iste cupiditate in.",
+        "Creamos llamados a la acción eficaces para capturar clientes potenciales.",
     },
     {
       icon: <FcSupport />,
-      title: "Lorem, ipsum dolor.",
+      title: "A Medida.",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur voluptatem quaerat iste cupiditate in.",
+        "Desarrollamos sitios de acuerdo a tus necesidades, nos gustan los desafios.",
     },
   ];
   return (

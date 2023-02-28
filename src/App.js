@@ -6,6 +6,7 @@ import ContactForm from "./components/Contact/Contact";
 import Services from "./components/Services/Services";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/Helpers/ScrollToTop";
+import Faq from "./components/Faq";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Main />} />
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/faq" element={<Faq />} />
         </Routes>
         <Footer />
       </ScrollToTop>
